@@ -63,6 +63,13 @@ header{
 .banner_polarizer{
     height: 100%;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
+}
+.banner_polarizer .item{
+    width: 100%;
+    height: calc(100vh - 150px);
+}
+.slidearea{
+    text-transform: uppercase;
 }
