@@ -99,3 +99,41 @@ header{
     font-size: 13px;
     margin-top: 30px;
 }
+
+.dafault{
+    padding: 50px 0;
+}
+.dafault .section-title,
+.dafault .section-desc{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.dafault .section-title{
+    font-size: 20px;
+}
+.dafault .section-desc{
+    font-size:12px;
+    color:#ccc;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+.dafault .section-body{
+    max-width: 1040px;
+    margin: auto;
+}
+.dafault.light{
+    background-color: #f7f7f7;
+}
+.dafault.light .section-title,
+.dafault.light .section-body{
+    color: #000;
+}
+.dafault.dark {
+    background-color: #000;
+}
+.dafault.dark .section-title,
+.dafault.dark .section-body{
+    color: #f7f7f7;
+}
