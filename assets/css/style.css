@@ -64,7 +64,6 @@ header{
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
 }
 .banner_polarizer .item{
     width: 100%;
@@ -72,4 +71,31 @@ header{
 }
 .slidearea{
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    flex-direction: column;
+}
+.slidearea h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.slidearea h1 span{
+    color: #b88b58;
+}
+.slidearea h2{
+    margin-top: 10px;
+}
+.slidearea a{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #b88b58;
+    font-size: 13px;
+    margin-top: 30px;
 }
