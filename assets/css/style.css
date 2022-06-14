@@ -287,3 +287,68 @@ header{
 .section-projects--photoarea:hover .section-projects--photoinfo{
     display: flex;
 }
+
+.bg-team{
+    background-color: #333;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    padding: 0;
+}
+.section-team-area{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px 0;
+}
+.section-teams-slides{
+    min-width: 250px;
+}
+.section-teams-slides .item{
+    display: flex;
+    min-width: 350px;
+    height: 430px;
+    padding: 15px 30px;
+}
+.item .card{
+    border-radius: 5px;
+    background-color: #fff;
+    flex: 1;
+    margin-left:30px;
+}
+.item .card:first-child{
+    margin-left: 0;
+}
+.card{
+    display: flex;
+    color: #000;
+    flex-direction: column;
+    align-items: center;
+}
+.card-image{
+    width: 180px;
+    padding-top: 40px;
+}
+.card-name{
+    margin-top: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+.card-social{
+    display: flex;
+}
+.card-social a {
+    width: 30px;
+    height: 30px;
+    background-color: #bebebe;
+    margin-left: 5px;
+    margin-top: 35px;
+    padding: 8px;
+    border-radius: 50%;
+}
+.card-social a img{
+    width: 13px;
+    height: 13px;
+    object-fit: contain ;
+    
+}
