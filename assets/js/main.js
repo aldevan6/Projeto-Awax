@@ -1,4 +1,4 @@
-$('.banner-carrossel').owlCarousel({
+$('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     responsiveClass: true,
@@ -15,20 +15,13 @@ $('.banner-carrossel').owlCarousel({
     }
 })
 
-$('.slider').owlCarousel({
-    loop: true,
-    margin: 10,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 1
-        },
-        1015: {
-            items: 1
-        }
-    }
-})
-
+$(document).ready(function () {
+    $('.section-teams-slides').slick({
+        infinite: true,
+        dots: true,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 2
+  });
+});
 
