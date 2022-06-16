@@ -67,6 +67,20 @@ header{
     font-size: 13px;
     margin-top: 30px;
 }
+.button2{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #373737;
+    font-size: 13px;
+    margin-top: 30px;
+}
+.button2:hover {
+    background-color: #b88b58;
+}
 .banner{
     height: calc(100vh - 100px);
     background-color: #333;
@@ -139,6 +153,12 @@ header{
 .dafault.dark .section-body{
     color: #f7f7f7;
 }
+.traco {
+    width: 12px;
+    margin: 5px 0;
+    border-bottom: 1px solid #7d7d7d;
+}
+
 
 /* CSS de áreas específica */
 .section-aboutus{
@@ -348,5 +368,72 @@ header{
 .section-teams-slides .item-social a:hover{
     background-color: #b88b58;
 }
-
-
+.deposition-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.deposition-content span{
+    margin-top: 30px;
+}
+.deposition-name{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 23px;
+}
+.deposition-occupation{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+.deposition-content p{
+    line-height: 23px;
+    margin-top: 20px;
+    max-width: 730px;
+    text-align: center;
+}
+.partner-companies{
+    display: flex;
+    flex-wrap: wrap;
+}
+.partner-companies div{
+    flex: 1;
+}
+.section-prices{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-price{
+    flex: 1;
+    background-color: #fff;
+    margin-left: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+.section-price h1{
+    font-size: 23px;
+    padding-top: 10px;
+}
+.section-price h1,
+.section-price h4{
+    color: #252525;
+}
+.section-price .time{
+    margin-bottom: 15px;
+    font-size: 10px;
+}
+.section-premium-content{
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #d8d8d8;
+}
+.section-premium-left,
+.section-premium-rigth{
+    flex: 1;
+}
