@@ -419,15 +419,19 @@ header{
 .section-price h1{
     font-size: 23px;
     padding-top: 10px;
+    margin-bottom: 15px;
 }
 .section-price h1,
 .section-price h4{
+    text-transform: uppercase;
     color: #252525;
 }
 .section-price .time{
     margin-bottom: 15px;
     font-size: 10px;
 }
+
+
 .section-premium-content{
     display: flex;
     padding: 20px;
@@ -437,3 +441,23 @@ header{
 .section-premium-rigth{
     flex: 1;
 }
+.section-premium-rigth h1{
+    font-size: 23px;
+    text-transform: uppercase;
+    display: flex;
+}
+.section-premium-rigth h1::before{
+    content: url(../images/check.png);
+    height: 38px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+.section-premium-rigth p{
+    line-height: 23px;
+    margin: 10px 0;
+    color: #8e8e8e;
+    margin-left: 50px;
+}
+
+
