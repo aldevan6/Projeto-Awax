@@ -601,7 +601,7 @@ input[name="name"] {
     margin-right: 20px;
 }
 input[name="subject"]{
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 .btn-form{
     display: flex;
