@@ -554,54 +554,54 @@ header{
 
 .forms{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
-.form{
-    display: flex;
-}
-.form-conten{
-    display: flex;
-    padding: 10px;
-}
+
+.form-conten,
 .form-conten2{
     display: flex;
     padding: 10px;
+}
+
+.form-conten2{
     flex-direction: column;
 }
+
 .form-conten label,
 .form-conten2 label{
     color: #9e9e9e;
     font-weight: 600;
     font-size: 12px;
 }
+
+input[name="name"],
+input[name="email"],
+input[name="message"],
+input[name="subject"]{
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #aeaeae;
+}
+
 input[name="name"],
 input[name="email"]{
     flex: 1;
-    padding: 3px;
-    outline: none;
-    border: none;
     margin-bottom: 8px;
-    border-bottom: 2px solid #aeaeae;
     background-color: #f7f7f7;
+    min-width: 230px;
 }
+
 input[name="message"],
 input[name="subject"]{
     width: 100%;
-    padding: 3px;
-    border: none;
-    outline: none;
     background-color: #f7f7f7;
-    border-bottom: 2px solid #aeaeae;
 }
-input[name="name"]{
+input[name="name"] {
     margin-right: 20px;
 }
 input[name="subject"]{
-    margin-bottom: 50px;
-}
-.input[name="subject"]{
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 .btn-form{
     display: flex;
