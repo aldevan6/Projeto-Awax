@@ -656,3 +656,71 @@ input[type="submit"]{
 }
 
 /* Fim mapa */
+
+/* Início footer */
+.footer-dafault{
+    padding: 30px;
+    background-color: #000;
+    color: #fff;
+}
+.footer-body{
+    width: 100vw;
+    max-width: 1140px;
+    margin: auto;
+}
+.footer-container{
+    display: flex;
+}
+.footer-social,
+.footer-desc,
+.footer-form{
+flex: 1;
+padding: 10px;
+}
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-icon{
+    display: flex;
+}
+.footer-icon a{
+    display: flex;
+    width: 34px;
+    height: 32px;
+    margin-right: 5px;
+    background-color: #373737;
+    border-radius: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon a:hover{
+    background-color: #b88b58;
+}
+.footer-form{
+    background-color: #373737;
+    border-radius: 3px;
+}
+.footer-desc{
+    font-size: 12px;
+    color: #7e7e7e;
+    line-height: 20px;
+}
+.copyright{
+    font-weight: 600;
+    font-size: 18px;
+}
+.footer-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-form-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FIm footer */
