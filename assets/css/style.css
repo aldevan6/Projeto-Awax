@@ -35,6 +35,9 @@ header{
     display: flex;
     justify-content: flex-end;    
 }
+.menu-opener{
+    display: none;
+}
 .menu ul {
     display: flex;
 }
@@ -252,6 +255,7 @@ header{
 }
 .section-projects--filter ul{
     display: flex;
+    flex-wrap: wrap;
 }
 .section-projects--filter li{
     padding: 15px;
@@ -405,7 +409,9 @@ header{
 }
 .section-prices{
     display: flex;
-    flex-wrap: wrap;
+}
+.section-prices:last-child{
+    margin-right: 20px;
 }
 .section-price{
     flex: 1;
@@ -418,6 +424,7 @@ header{
     align-items: center;
     font-size: 13px;
 }
+
 .section-price h1{
     font-size: 23px;
     padding-top: 10px;
@@ -434,6 +441,11 @@ header{
 }
 
 
+
+.button-section--premuim{
+    display: flex;
+    justify-content: center;
+}
 .section-premium-content{
     display: flex;
     padding: 20px;
@@ -670,12 +682,14 @@ input[type="submit"]{
 }
 .footer-container{
     display: flex;
+    flex-wrap: wrap;
+    
 }
 .footer-social,
 .footer-desc,
 .footer-form{
-flex: 1;
-padding: 10px;
+    flex: 1;
+    padding: 10px;
 }
 .footer-social{
     display: flex;
@@ -743,3 +757,293 @@ padding: 10px;
     cursor: pointer;
 }
 /* FIm footer */
+
+/* Início esponsividade para tablet */
+@media (min-width: 450px) and (max-width:800px){
+    .logo{
+        margin-left: 30px;
+    }
+    .menu-opener{
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
+    nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li a{
+        font-weight: bold;
+        height: 80px;
+        font-size: 27px;
+        margin-left: 50px;
+        border: 0;
+    }
+    .menu li.active a{
+        border: none;
+        color: #b88b58;
+    }
+
+    .section-aboutus{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-about-text{
+        margin: 0 30px 30px 30px;
+    }
+    .section-services{
+        flex-wrap: wrap;
+    }
+    .section-service{
+        min-width: 50%;
+        margin-bottom: 30px;
+    }
+    .section-service:first-child{
+        border: 0;
+    }
+    .partner-companies{
+        align-items: center;
+    }
+    .partner-companies div{
+        display: flex;
+        min-width: 33%;
+        margin: 20px;
+    }
+    .partner-companies div img{
+        margin: auto;
+    }
+    .section-prices{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-price{
+        margin-left: 20px;
+        min-width: calc(50% - 40px);
+        margin-bottom: 20px;
+    }
+
+    .section-premium-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-premium-rigth{
+        padding: 50px 80px 0 80px;
+    }
+    .section-premium-left img{
+        width: 70%;
+    }
+
+    .section-facts{
+        flex-wrap: wrap;
+    }
+    .section-fact{
+        min-width: 50%;
+        margin-bottom: 30px;
+    }
+    .social-facts .body{
+        margin: 0 20px;
+    }
+    .footer-container{
+        flex-direction: column-reverse;
+        width: calc(100vw - 60px);
+    }
+    .copyright{
+        margin-top: 20px;
+    }
+    .footer-social{
+        align-items: center;
+    }
+    .section-map--area{
+        padding: 0 30px;
+    }
+    .section-map--info{
+        width: auto;
+    }
+    .slidearea h1{
+        font-size: 40px;
+    }
+    .section-about-img{
+        max-width: 400px;
+        width: 90%;
+    }
+}
+/* Fim esponsividade para tablet */
+
+/* Início esponsividade para celular */
+
+@media (max-width:450px) {
+    .logo {
+        margin-left: 30px;
+    }
+
+    .menu-opener {
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 80vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li a {
+        font-weight: bold;
+        height: 60px;
+        font-size: 20px;
+        margin-left: 30px;
+        border: 0;
+    }
+
+    .menu li.active a {
+        border: none;
+        color: #b88b58;
+    }
+
+    .section-aboutus {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-about-text {
+        margin: 0 30px 30px 30px;
+    }
+
+    .section-services {
+        flex-wrap: wrap;
+    }
+
+    .section-service {
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .section-projects--filter{
+        margin: 0 30px;
+    }
+    
+    .section-projects--photo{
+        width: 320px;
+    }
+    .section-projects--photoarea{
+        width: 300px;
+        height: 190px;
+    }
+    .section-service:first-child {
+        border: 0;
+    }
+
+    .partner-companies {
+        align-items: center;
+    }
+
+    .partner-companies div {
+        display: flex;
+        min-width: 33%;
+        margin: 20px;
+    }
+
+    .partner-companies div img {
+        margin: auto;
+    }
+    
+    .section-prices {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-price {
+        margin-left: 20px;
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section-premium-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-premium-rigth {
+        padding: 50px 80px 0 80px;
+    }
+    
+    .section-premium-left img {
+        width: 70%;
+    }
+
+    .section-facts {
+        flex-wrap: wrap;
+    }
+
+    .section-fact {
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .social-facts .body {
+        margin: 0 20px;
+    }
+
+    .footer-container {
+        flex-direction: column-reverse;
+        width: calc(100vw - 60px);
+    }
+
+    .copyright {
+        margin-top: 20px;
+    }
+
+    .footer-social {
+        align-items: center;
+    }
+
+    .section-map--area {
+        padding: 0x;
+    }
+
+    .section-map{
+        padding: 0;
+        padding-bottom: 250px;
+    }
+    
+    .section-map--info {
+        width: auto;
+    }
+
+    .slidearea h1 {
+        font-size: 30px;
+    }
+    .slidearea h2{
+        font-size: 17px;
+    }
+    
+    .section-about-img{
+        width: 90%;
+        margin: 0;
+    }
+
+    input[name="name"],
+    input[name="email"]{
+        min-width: 200px;
+    }
+}
+/* Fim esponsividade para celular */

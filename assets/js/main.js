@@ -1,19 +1,23 @@
-// $('.owl-carousel').owlCarousel({
-//     loop: true,
-//     margin: 10,
-//     responsiveClass: true,
-//     responsive: {
-//         0: {
-//             items: 1
-//         },
-//         600: {
-//             items: 1
-//         },
-//         1000: {
-//             items: 1
-//         }
-//     }
-// })
+// Configuração do menu móvel
+window.onload = function () {
+    document.querySelector(".menuMobile img").addEventListener("click", function () {
+        if (document.querySelector(".menu nav ").style.display == 'flex') {
+            document.querySelector(".menu nav ").style.display = 'none';
+        } else {
+            document.querySelector(".menu nav ").style.display = 'flex';
+        }
+    })
+
+}
+
+window.addEventListener('resize', function () {
+    var largura = window.innerWidth;
+
+    if (largura >= 800)
+        document.querySelector(".menu nav ").removeAttribute('style');
+});
+
+// Configuração do slide do banner
 
 $(document).ready(function () {
     $('.section-teams-slides').slick({
@@ -48,12 +52,11 @@ $(document).ready(function () {
                     slidesToScroll: 1
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
   });
 });
+
+// Configuração dos demais slides
 
 $(document).ready(function () {
     $('.section-depositions, .section-premium-area, .banner-slide').slick({
