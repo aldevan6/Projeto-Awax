@@ -1054,7 +1054,7 @@ input[type="submit"]{
 
     input[name="name"],
     input[name="email"]{
-        min-width: 200px;
+        min-width: 180px;
     }
 }
 /* Fim esponsividade para celular */
