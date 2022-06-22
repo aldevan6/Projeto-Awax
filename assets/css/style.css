@@ -875,6 +875,10 @@ input[type="submit"]{
         max-width: 400px;
         width: 90%;
     }
+    input[name="name"],
+    input[name="email"] {
+        min-width: 200px;
+    }
 }
 /* Fim esponsividade para tablet */
 
